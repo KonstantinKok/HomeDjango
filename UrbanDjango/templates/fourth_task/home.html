@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>{{ title }}</title>
+    <link rel= "stylesheet" type="text/css" href= "{% static 'style.css' %}">
 </head>
 <body>
     <h1> {{ text }} </h1>
-    <ul>
-    <li><h2><a href="#">Главная</a></h2></li>
-    <li><h2><a href="/shop">Магазин</a></h2></li>
-    <li><h2><a href="/cart">Корзина</a></h2></li>
-    </ul>
+    {% include 'fourth_task/menu.html' %}
 </body>
 </html>

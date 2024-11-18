@@ -15,7 +15,7 @@ def home(request):
 
 
 def shop(request):
-    title = 'Магазин'
+    title = 'Cайт Django'
     text = 'Магазин игр'
     context = {
         'title': title,
@@ -25,16 +25,14 @@ def shop(request):
 
 
 def cart(request):
-    title = 'Корзина'
-    text = 'Извините корзина пуста'
+    title = 'Cайт Django'
+    text_h1 = 'Корзина'
+    text = 'Извините ваша корзина пуста'
     context = {
         'title': title,
+        'text_h1': text_h1,
         'text': text,
     }
     return render(request, 'fourth_task/cart.html', context)
-
-
-# Create your views here.
-from django.shortcuts import render
 
 # Create your views here.
