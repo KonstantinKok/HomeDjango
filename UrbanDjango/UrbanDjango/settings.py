@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'UrbanDjango',
     'task4',
+    'task5',
 ]
 
 MIDDLEWARE = [
